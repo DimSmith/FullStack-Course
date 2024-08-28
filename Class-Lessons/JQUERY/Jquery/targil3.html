@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery 3</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <style>
+        .box{
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="box">
+            <img src="pexels-pascal-borener-1089306.jpg" width="150px" height="150px">
+        </div>
+    <script>
+        $(() =>{
+            $(".box")
+                .animate({ "left" : "300px"},2000)
+                .animate({ "top" : "200px"},2000)
+                .animate({ "left" : "0px"},2000)
+                .animate({ "top" : "0px"},2000)
+        });
+    </script>
+</body>
+
+</html>

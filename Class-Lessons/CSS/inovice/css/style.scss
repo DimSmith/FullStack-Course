@@ -1,0 +1,30 @@
+@import "elements/sum";
+@import "elements/invoiceBody";
+@import "elements/invoiceHover";
+@import "elements/invoiceHeader";
+
+.invoice{
+    margin-left: $bodyMarginLeft;
+    margin-right: $bodyMarginRight;
+    border: $bodyBorder;
+}
+.invoice td{
+    border: $bodyBorder;
+}
+.sum{
+    background-color: $sumBackground;
+    color: $sumColor;
+    font-weight: $sumFont;
+    text-transform: $sumText;
+}
+.invoice td:hover{
+    border: $hoverBorder;
+    background-color: $hoverBackground;
+    color: $hoverBorderBColor;
+}
+.invoice tr:first-child{
+    background-color: $headerBackground;
+    color: $headerColor;
+    font-weight: $headerFont;
+    text-transform: $headerText;
+}

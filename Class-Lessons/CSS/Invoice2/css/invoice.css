@@ -1,0 +1,46 @@
+.invoice{
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+}
+.invoice td{
+    border: 2px solid black;
+}
+.invoice tr:first-child{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.invoice tr:nth-child(2){
+    background-color: rgb(70, 179, 90);
+}
+.invoice tr:nth-child(3){
+    background-color: rgb(70, 179, 90);
+}
+.invoice tr:nth-child(4){
+    background-color: rgb(179, 70, 154);
+}
+.invoice tr:nth-child(5){
+    background-color:  rgb(179, 70, 154);
+}
+.invoice tr:nth-child(6){
+    background-color:  rgb(179, 70, 154);
+}
+.invoice tr:first-child{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.sum{
+    background-color: rgb(19, 245, 203);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.invoice td:hover{
+    border: 2px solid black;
+    background-color: yellow;
+    color: black;
+}

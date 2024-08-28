@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--External link to CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Script link to JS-->
+    <script defer src="js/product.js"></script>
+    <title>Exam Task</title>
+</head>
+<body>
+    <h1>Add Product</h1>
+    <!--Form of adding product-->
+    <form class="formStyle" id="formList" action="javascript:addProduct()">
+        <input type="text" placeholder="Product Name" id="productName" required/><br /><br />
+        <input type="number" placeholder="Product Price" id="productPrice" required/><br /><br />
+        <select id="productCategoric" required>
+            <option  hidden label="Select Product Categoric"></option> 
+            <option >Drinks</option>
+            <option >Meat</option>
+            <option >Dairy</option>
+            <option >Snacks</option>
+            <option >Basic</option>
+        </select><br /><br />
+        <input type="text" placeholder="URL Of Product Picture" id="productPicture" required/><br /><br />
+        <input type="submit" value="Add Product"/>
+    </form><br />
+    <hr />
+    <!--Table of products-->
+    <table id="productList" cellpadding="0" border="1"></table>
+</body>
+</html>

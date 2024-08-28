@@ -1,0 +1,9 @@
+.success{
+    border: 1px solid green;
+    background-color: green;
+    padding: 5px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}

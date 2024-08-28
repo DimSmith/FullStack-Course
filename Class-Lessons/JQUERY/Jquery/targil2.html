@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Fancy Header</h2>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis in asperiores deleniti, hic quidem dignissimos. Porro, eum atque et libero necessitatibus minima ipsa, sint iusto id asperiores, aspernatur corporis.
+    </div>
+    <br />
+    <button id="darkMode">Dark Mode</button>
+
+    <script>
+        let isDark = true;
+        $(() => {
+            $("#darkMode").css({ "background-color": "black", color: "white" });
+            $("#darkMode").on("click", () =>{
+                if (isDark) {
+                    $("*").css({ "background-color": "black", color: "white" });
+                    $("#darkMode").css({ "background-color": "white", color: "black" });
+                    $("#darkMode").text("Light Mode");
+                }
+                else {
+                    $("*").css({ "background-color": "white", color: "black" });
+                    $("#darkMode").css({ "background-color": "black", color: "white" });
+                    $("#darkMode").text("Dark Mode");
+                };
+                isDark = !isDark;
+            });
+        });
+    </script>
+</body>
+
+</html>

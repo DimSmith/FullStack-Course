@@ -1,0 +1,17 @@
+li{
+    list-style: none;
+}
+li[data-dir="down"]:before{
+    content: "\2193";
+    color:red;
+}
+li[data-dir="up"]:before{
+    content: "\2191";
+    color: green;
+}
+span[data-dir="down"]{
+    color: red;
+}
+span[data-dir="up"]{
+    color: green;
+}

@@ -1,0 +1,11 @@
+$padding: 5px;
+$margin: 10px;
+$color: red;
+$background: bisque;
+
+input{
+    padding: $padding;
+    margin-top: $margin;
+    color: $color;
+    background-color: $background;
+}

@@ -1,0 +1,23 @@
+<div style="text-align: center;">
+  <app-header></app-header>
+  <h1>Welcome {{title}}</h1>
+  <h2>{{subtitle}}</h2>
+  <app-succese></app-succese>
+  <app-failed></app-failed>
+  <hr>
+  <h3>Temperature Converter</h3>
+  <input type="number" name="degree" id="degree" [(ngModel)]="celsius"/><br/>
+  <h4>The Degree in Fahrenheit is : {{(celsius*1.8)+32}}</h4>
+  <hr>
+  <h3>Currency Converter</h3>
+  <input type="number" name="currency" id="currency" [(ngModel)]="currency"/><br/>
+  <h4>The currency in USD : {{currency*0.27}}</h4>
+  <h4>The currency in EUR : {{currency*0.25}}</h4>
+  <h4>The currency in Canadian Dollar : {{currency*0.36}}</h4>
+  <hr>
+  <h3>Size Converter</h3>
+  <input type="number" name="sizeCM" id="sizeCM" [(ngModel)]="sizeCM"/><br/>
+  <h4>The Size in Inch is : {{sizeCM*0.393701}}</h4>
+  <input type="number" name="sizeM" id="sizeM" [(ngModel)]="sizeM"/><br/>
+  <h4>The size in Feet is: {{sizeM*3.28084}}</h4>
+</div>

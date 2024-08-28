@@ -1,0 +1,10 @@
+<div appCenter>
+  <h1>Change Text Style</h1>
+  <hr><br/>
+  <div [ngClass]="classes[currentIndex]">
+      <h2>The style of this text will change after clicking the button</h2>
+      <h2>The color is {{classes[currentIndex]}}</h2>
+  </div>
+  <br/><br/>
+  <button (click)="changeStyle()">Next</button>
+</div>

@@ -1,0 +1,28 @@
+/*Background*/
+/*Button*/
+/*div*/
+body {
+  font-family: Helvetica, sans-serif;
+  color: bisque;
+  font-size: 32px;
+  background-color: orange;
+}
+
+#container {
+  width: 400px;
+}
+
+div {
+  background-color: black;
+  color: white;
+  border: 1px solid purple;
+}
+
+input[type=button] {
+  background-color: green;
+  color: red;
+  margin-top: 20px;
+  font-family: 18px;
+}
+
+/*# sourceMappingURL=mystyle.css.map */

@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+input:invalid[type=password]{
+    outline: 2px solid red;
+}
+input:valid[type=password]{
+    outline: 2px solid blue;
+}
+input{
+    margin-bottom: 5px;;
+}

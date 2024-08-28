@@ -1,0 +1,9 @@
+<div appCenter>
+  <h3>Check The Candidate</h3>
+  <hr>
+  <input type="number" name="age" placeholder="Enter year of birth" [(ngModel)]="year"/><br/>
+  <h2>Age: {{2024-year}}</h2>
+  <hr>
+  <div  *ngIf="2024-year >= 20 && 2024-year <= 30; else failAge" appMarkSuccess>Call Her</div>
+  <ng-template #failAge appMarkFail>Not For You</ng-template>
+</div>

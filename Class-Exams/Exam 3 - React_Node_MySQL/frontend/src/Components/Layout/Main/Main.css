@@ -1,0 +1,25 @@
+.Main {
+	height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 13% 80% 7%;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.Main>header,
+.Main>footer{
+    grid-column: span 6;
+}
+
+
+.Main>main{
+    grid-column: span 5;
+    overflow: auto;
+}
+
+
+.Main,
+.Main>*{
+    border: 1px solid Black;
+    overflow: auto;
+}

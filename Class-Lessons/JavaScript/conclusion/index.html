@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Script link to JS-->
+    <script defer src="js/myJs.js"></script>
+    <!--External link to CSS-->
+    <link rel="stylesheet" href="css/myStyle.css">
+    <title>Exam Task</title>
+</head>
+<body>
+    <h1>Exam Task</h1>
+    <!--Form of adding event-->
+    <form class="formStyle" id="formList" action="javascript:addEvent()">
+        <h2>Add Event</h2>
+        <hr/>
+        <input type="text" placeholder="Event Name" id="eventName" required/><br /><br />
+        <input type="number" placeholder="Minimum Price" id="minPrice" required/><br /><br />
+        <input type="number" placeholder="Maximum Price" id="maxPrice" required/><br /><br />
+        <select id="eventType" required>
+            <option  hidden label="--Select Event--"></option>
+            <option >Birthday</option>
+            <option >Anniversary</option>
+            <option >Brit</option>
+            <option >Bar Metzva</option>
+            <option >Wedding</option>
+        </select><br /><br />
+        <input type="date" placeholder="Date Event" id="date" required/><br /><br />
+        <input type="text" placeholder="URL of Party Boy" id="url" required/><br /><br/>
+        <input type="submit" value="Add Event" id="addEvent"/>
+    </form><br /><br/>
+    <!--Table for the list-->
+    <table id="eventList" cellpadding="0" border="1"></table>
+</body>
+</html>

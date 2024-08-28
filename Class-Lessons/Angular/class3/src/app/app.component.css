@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.white{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: black;
+}
+.black{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+}
+.girl{
+    background-color: red;
+    color: black;
+}
+.boy{
+    background-color: blue;
+    color: white;
+}

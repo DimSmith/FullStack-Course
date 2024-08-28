@@ -1,0 +1,75 @@
+body{
+    text-align: center;
+    background-image: url("/images/tile.jpg");
+}
+
+/*Header Style*/
+.pageHeader{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+}
+
+/*Adding task form style*/
+#taskForm{
+    background-image:  url("/images/formbg.jpg");
+    background-repeat:  repeat-y;
+    background-position-x: center;
+    height: auto;
+}
+
+/*Task note style on the board*/
+#noteStyle{
+    background-image: url("/images/notebg.png");
+    background-repeat:  repeat-y;
+    background-position-x: center;
+    height: 250px;
+    animation: fadeIn 0.5s;
+    margin-bottom: 5px;
+}
+
+/*Closing button style on the task note*/
+#closeButton{
+    margin-left: 130px;
+    padding-top: 40px;
+    display: none;
+}
+
+/*Hover for the button*/
+#noteStyle:hover #closeButton{
+    display: inline;
+    
+}
+
+/*Text area style on hover*/
+#noteStyle:hover textarea{
+    margin-top: -20px;
+}
+
+/*Animation of adding task*/
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/*Data on the task style*/
+#dataArea{
+    margin-top: 5px;
+    margin-right: 110px;
+}
+
+/*Time on the task style*/
+#timeArea{
+    margin-right: 155px;
+}
+
+/*Text on the task style*/
+textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-right: 5px;
+    margin-top: 40px;
+    margin-right: 7%;
+}
+

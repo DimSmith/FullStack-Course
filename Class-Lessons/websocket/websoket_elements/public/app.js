@@ -1,0 +1,79 @@
+//please remmber to change the ip to your computer ip, or the server ip....
+const socket = new WebSocket(
+    `ws://192.168.60.22:3000/start_web_socket=${myUsername}`
+);
+
+let btn1 = false;
+let btn2 = false;
+
+socket.onmessage = (msg) => {
+    const data = JSON.parse(msg.data);
+
+    switch (data.event) {
+        case "button-color":
+            document.getElementById(data.target).style.backgroundColor = data.message;
+            break;
+        case "checkbox":
+            document.getElementById(data.target).checked = data.message;
+            break;
+        case "input-text":
+            document.getElementById(data.target).value = data.message;
+            break;
+    }
+};
+
+//on page load
+window.onload = () => {
+    //get current status from the server :)
+}
+
+const changeBtn1 = () => {
+    btn1 = !btn1;
+    document.getElementById("btn1").style.backgroundColor = btn1 ? "GREEN" : "LIGHTGREY";
+    socket.send(
+        JSON.stringify({
+            event: "button-color",
+            target: "btn1",
+            message: btn1 ? "GREEN" : "LIGHTGREY",
+        })
+    );
+}
+
+const changeBtn2 = () => {
+    btn2 = !btn2;
+    document.getElementById("btn2").style.backgroundColor = btn2 ? "RED" : "LIGHTGREY";
+    socket.send(
+        JSON.stringify({
+            event: "button-color",
+            target: "btn2",
+            message: btn1 ? "RED" : "LIGHTGREY",
+        })
+    );
+}
+
+const changeChkBox = () => {
+    socket.send(
+        JSON.stringify({
+            event: "checkbox",
+            target: "chkBox",
+            message: document.getElementById("chkBox").checked,
+        })
+    );
+}
+
+const changeText = () => {
+    socket.send(
+        JSON.stringify({
+            event: "input-text",
+            target: "myTxt",
+            message: document.getElementById("myTxt").value,
+        })
+    );
+}
+
+function addMessage(message){
+    //displays new message
+    document.getElementById(
+        "conversation"
+    ).innerHTML += `${message}<br/>`;
+}

@@ -1,0 +1,26 @@
+<h1>Zebra Style(ngFor)</h1>
+<ul>  
+    <!--<li>Student 1</li>
+    <li>Student 2</li>
+    <li>Student 3</li>
+    <li>Student 4</li>
+    <li>Student 5</li>
+    <li>Student 6</li>
+    <li>Student 7</li>-->
+    <li *ngFor="let item of names_array;let i=index" [ngClass]="i%2==0?'black':'white'">{{item}}</li>
+</ul>
+<hr>
+
+<h1>Boy/Girl(ngSwitch)</h1>
+<ul>  
+    <li *ngFor="let item of random_array;" [ngSwitch]="item">
+        <span *ngSwitchCase="boy" ngClass="boy">
+            {{item}}</span>
+        <span *ngSwitchCase="girl" ngClass="girl">
+            {{item}}</span>
+        <span *ngSwitchDefault ngClass="black">
+            {{item}}</span>
+        <br>
+    </li>
+</ul>
+<hr>

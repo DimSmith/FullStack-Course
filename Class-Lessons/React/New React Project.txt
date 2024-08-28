@@ -1,0 +1,30 @@
+npm install -g create-react-app
+
+
+כול פעם שרוצים להתחיל פרויקט חדש נבצע יצור של שלה 
+TEMPLATE
+
+create-react-app react-is-easy --template typescript
+
+נריץ את הפקודה הזאת
+
+לאחר שנסיים את הפרויקט או בתהליך ונרצה את תוצאה/האתר נבצע פקדות
+
+npm build
+
+ברגע שנרצה לשלוח פרויקט/אתר נשלח ללא תיקית המודולוס, והמשתמש יוכל להחזיר אותה בעזרת 
+
+npm install
+
+npm install -g react-cli-snippets
+
+For Routing 
+
+npm install react-dom
+npm install react-router-dom  
+
+npm install react-hook-form
+
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+
+npm install axios

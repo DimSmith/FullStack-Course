@@ -1,0 +1,26 @@
+$border: solid black 1px;
+$borderShadow: 5px 5px 2px 2px black;
+$width:700px;
+$padding: 5px;
+$margin: 10px;
+$background: bisque;
+$align: center;
+
+h1{
+    text-align: $align;
+}
+.listBox{
+    border: $border;
+    box-shadow: $borderShadow;
+    width: $width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $padding;
+    background-color: $background;
+}
+.newTask{
+    text-align: center;
+    padding: $padding;
+    margin-left: $margin;
+    margin-right: $margin;
+}

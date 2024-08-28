@@ -1,0 +1,39 @@
+.MainPage {
+    
+}
+.menu {
+    margin-bottom: 50px;
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.vacation-card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    box-shadow: 0 1px 1px rgba(0,0,0,1);
+}
+
+.card-media{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid;
+}

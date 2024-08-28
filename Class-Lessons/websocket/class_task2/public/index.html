@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Task 2</title>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Web Socket Class Task</h1>
+    <hr />
+    <input type="button" id="button1" value="White/Red" onclick="buttonClick('button1')"><br/><br/>
+    <input type="button" id="button2" value="Green/White" onclick="buttonClick('button2')"><br/><br/>
+    <input type="checkbox" id="chkBox" onclick="buttonClick('button3')"> Remember me<br/><br/>
+    <textarea id="myTXT" rows="4" cols="50" placeholder="Enter your text" onkeypress="buttonClick('button4')"></textarea><br/><br/>
+
+    <script>
+        var socket = io();
+
+        const buttonClick = (buttonId) => {
+            socket.emit('buttonClick', buttonId);
+        }
+
+        socket.on('updateColor', function(data) {
+            const button = document.getElementById(data.buttonId);
+            button.style.backgroundColor = data.color;
+        });
+
+        socket.on('toggleCheckbox', function(data) {
+            const checkbox = document.getElementById('chkBox');
+            checkbox.checked = !checkbox.checked;
+        });
+
+        socket.on('updateTextarea', function(data) {
+            const textarea = document.getElementById('myTXT');
+            textarea.value = data;
+        });
+
+;
+    </script>
+</body>
+</html>

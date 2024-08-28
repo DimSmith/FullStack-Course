@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Price</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Good Price For Apartments</h1>
+    <hr/>
+    <select name="cities" id="city">
+        <option value="אבן יהודה">אבן יהודה</option>
+        <option value="אופקים">אופקים</option>
+        <option value="אור יהודה">אור יהודה</option>
+        <option value="אור עקיבא">אור עקיבא</option>
+        <option value="אילת"> אילת</option>
+        <option value="אלעד"> אלעד</option>
+        <option value="אלפי מנשה"> אלפי מנשה</option>
+        <option value="אלקנה"> אלקנה</option>
+        <option value="אראיל"> אראיל</option>
+        <option value="אשדוד"> אשדוד</option>
+        <option value="אשקלון"> אשקלון</option>
+        <option value="באר יעקב"> באר יעקב</option>
+        <option value="באר שבע"> באר שבע</option>
+        <option value="בית אל"> בית אל</option>
+        <option value="בית אריה"> בית אריה</option>
+        <option value="בית דגן"> בית גדן</option>
+        <option value="ביתר עלית"> ביתר עלית</option>
+        <option value="בית שאן"> בית שאן</option>
+        <option value="בית שמש"> בית שמש</option>
+        <option value="בני ברק"> בני ברק</option>
+        <option value="בנימיה-גבעת עד"> בנומיה-גבעת עד</option>
+        <option value="בת חפר">בית חפר </option>
+        <option value="גבעת בנימין"> גבעת בנימין</option>
+        <option value="גדרה"> גדרה</option>
+        <option value="גן יבנה"> יבנה</option>
+        <option value="גני תקוה"> גני תקווה</option>
+        <option value="ג'סר א-זרקא"> ג'סר א-זרקא</option>
+        <option value="דימונה"> דימונה</option>
+        <option value="דיר חנא"> דיר חנא</option>
+        <option value="הרצליה"> הרצליה</option>
+        <option value="זכרון יעקב"> זכרון יעקוב</option>
+        <option value="חדרה"> חדרה</option>
+        <option value="חולון">חולון </option>
+        <option value="חיפה">חיפה </option>
+        <option value="חצור הגלילית">חצור הגלילית </option>
+        <option value="חריש"> חריש</option>
+        <option value="טבריה"> טבריה</option>
+        <option value="טירת הכרמל"> טירת הכרמל</option>
+        <option value="טרעאן"> טרעאן</option>
+        <option value="יבנה"> יבנה</option>
+        <option value="יהוד"> יהוד</option>
+        <option value="יקנעם עלית"> יקנעם עלית</option>
+        <option value="ירוחם"> ירוחם</option>
+        <option value="ירושלים"> ירושלים</option>
+        <option value="כפר ברא"> כפר ברא</option>
+        <option value="כפר יונא"> כפר יונא</option>
+        <option value="כפר מנדא"> כפר מנדא</option>
+        <option value="כפר קאסם"> כפר קאסם</option>
+        <option value="כרמיאל">כרמיאל </option>
+        <option value="לוד"> לוד</option>
+        <option value="מבשרת ציון">מבשרת ציון</option>
+        <option value="מגדל העמק">מגדל העמק </option>
+        <option value="מדרשת בן גוריון"> מדרשת בן גוריון</option>
+        <option value="מודיעין"> מודיעין</option>
+        <option value="מעלה אדומים">מעלה אדומים </option>
+        <option value="מעלות-תרשיחא">מעלות- תרשיחא </option>
+        <option value="מצפה רמון">מצפה רמון </option>
+        <option value="מרכז שפירא"> מרכז שפירא</option>
+        <option value="נהריה"> נהריה</option>
+        <option value="נוף הגליל">נוף הגליל </option>
+        <option value="נחף"> נחף</option>
+        <option value="נס ציונה"> נס ציונה</option>
+        <option value="נצרת">נצרת </option>
+        <option value="נשר">נשר </option>
+        <option value="נתיבות">נתיבות </option>
+        <option value="נתניה"> נתניה</option>
+        <option value="סח'נין"> סחנ'נין</option>
+        <option value="עכו"> עכו</option>
+        <option value="עמנואל"> עמנואל</option>
+        <option value="עפולה"> עפולה</option>
+        <option value="ערד"> ערד</option>
+        <option value="עתלית"> עתלית</option>
+        <option value="פוריה-כפר עבו"> פוריה-כפר עבו</option>
+        <option value="פרדס חנה-כרכור"> פרדס חנה-כרכור</option>
+        <option value="פרדסיה">פרדסיה </option>
+        <option value="פתח תקוה">פתח תקוה </option>
+        <option value="צפת"> צפת</option>
+        <option value="קדימה-צורן"> קדימה-צורן</option>
+        <option value="קצרין">קצרין </option>
+        <option value="קרית אונו"> קרית אונו</option>
+        <option value="קרית ביאליק">קרית ביאליק </option>
+        <option value="קרית גת">קרית גת </option>
+        <option value="קרית טבעון">קרית טבעון </option>
+        <option value="קרית ים">קרית ים </option>
+        <option value="קרית מוצקין"> קרית מוצקין</option>
+        <option value="קרית שמונה"> קרית שמונה</option>
+        <option value="קרני שומרון"> קרני שומרון</option>
+        <option value="ראש העין"> ראש העין</option>
+        <option value="ראשון לציון"> ראשון לציון</option>
+        <option value="רחובות"> רחובות</option>
+        <option value="רכסים"> רכסים</option>
+        <option value="רמלה">רמלה </option>
+        <option value="רמת גן"> רמת גן</option>
+        <option value="רעננה"> רעננה</option>
+        <option value="שדרות"> שדרות</option>
+        <option value="שוהם"> שוהם</option>
+        <option value="שלומי"> שלומי</option>
+        <option value="תל אביב-יפו"> תל אביב-יפו</option>
+    </select>
+    <input type="submit" id="submit" value="Submit">
+    <hr/>
+    <table border=1 cellspacing="collapse">
+        <thead>
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        $(()=>{
+        const url = `https://data.gov.il/api/3/action/datastore_search?resource_id=7c8255d0-49ef-49db-8904-4cf917586031&q=`
+        $("#submit").on("click", () => {
+            let userSearch = $("#city").val();
+            $.get(url+userSearch, (response) => {
+            console.log(response.result.records);
+            /*let myData = response.result.records;
+            for (let index = 0; index < myData.length; index++) {
+                if(myData[counter].CityName === userSearch){
+                    let marker = L.marker([myData[index].Lat,myData[index].Long]).addTo(map);
+                }*/
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

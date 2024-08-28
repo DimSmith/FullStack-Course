@@ -1,0 +1,58 @@
+body,html{
+    height: 100%;
+}
+span{
+    font-weight: bold;
+    
+}
+.pageHeader{
+    text-align: center;
+    padding: 5%;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-size: 75px;
+    font-style: italic;
+    color: rgb(203, 169, 33);
+    text-shadow: 1px 1px 1px black;
+}
+.parallax {
+    background-image: url("/images/Crypto_Coins_2.jpg");
+    height: 100vh; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+}
+.content{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.navbar{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+#cardName{
+    font-size: 15px;
+}
+.tab-pane{
+    display: none;
+}
+.modal{
+    text-align: center;
+}
+.modal-body{
+    font-weight: bolder;
+}
+#aboutTab{
+    background-color: aliceblue;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.toggledCoin{
+    display: flex;
+    flex-direction: row;
+}
+#chartContainer{
+    width: 100%;
+}

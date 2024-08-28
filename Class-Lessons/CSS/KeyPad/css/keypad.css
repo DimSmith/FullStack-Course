@@ -1,0 +1,31 @@
+body{
+    background-color: slategray;
+}
+.keyPad{
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.keyPad td{
+    border: 1px solid white;
+    background-color: red;
+}
+.keyPad td:hover{
+    border: 1px solid white;
+    background-color: white;
+}
+.cssTable{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    color: azure;
+}
+.cssTable td{
+    border: 1px solid black;
+}
+.cssTable tr:nth-child(even){
+    background-color: green;
+}
+.cssTable tr:nth-child(odd){
+    background-color: rgb(105, 105, 184);
+}

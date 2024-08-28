@@ -1,0 +1,32 @@
+body{
+    direction: rtl;
+}
+h1{
+    text-align: center;
+}
+form{
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 3px -5px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+input,select{
+    margin-bottom: 10px;
+}
+input:invalid[type=text], input:invalid[type=number]{
+    background-color: red;
+}
+input:valid[type=text], input:valid[type=number] {
+    background-color: green;
+}
+input[type=text]:hover,input[type=number]:hover,select:hover{
+    border: 2px solid green;
+    background-color: yellow;
+    color: black;
+}
+.bottom{
+    text-align: center;
+    width: 25px;
+}
+

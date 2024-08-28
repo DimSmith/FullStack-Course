@@ -1,0 +1,24 @@
+<div class="operation-box">
+    <h2>Enter Your Account Number</h2>
+    <form (ngSubmit)="getAccountData(accountNumber)" #historyForm="ngForm">
+        <div class="form-group">
+            <label for="accountNumber">Account Number</label>
+            <input type="text" id="accountNumber" name="accountNumber" [(ngModel)]="accountNumber" required min="1" max="999999999">
+        </div >
+        <button type="submit"[disabled]="!historyForm.form.valid">Get Account Operations</button>
+    </form>
+</div>
+<hr/>
+<div *ngIf="showAccountOperations">
+    <h2>Account Number: {{ accountNumber }}</h2>
+    <div class="operations-container">
+        <div class="operation" *ngFor="let operation of operations">
+            <p>Operation ID: {{ operation.id }}</p>
+            <p>Type: {{ operation.actionType }}</p>
+            <p>Amount Money: {{ operation.amount }} USD</p>
+            <p>Date: {{ operation.date | date:'yyyy-MM-dd' }}</p>
+            <p *ngIf="operation.interest !== undefined">Interest: {{ operation.interest }} %</p>
+            <p *ngIf="operation.numberOfPayments !== undefined">Number of Payments: {{ operation.numberOfPayments }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+html, body{
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0%;
+    background-color: bisque;
+}
+img{
+    width: 20%;
+    height: 20%;
+}
+.pos{
+    position: relative;
+    left: 0;
+    top: 0;
+    animation-name: photoMov;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes photoMov{
+    0%{left: 0; top:0;}
+    25%{left: 0; top:70%;}
+    50%{left: 80%; top:70%;}
+    75%{left: 80%; top:0;}
+    100%{left: 0; top:0;}
+}

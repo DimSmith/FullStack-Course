@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <title>Countries Statistics</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        form{
+            border: 1px solid black;
+            box-shadow: 5px 5px 5px black;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Countries Statistics</h2>
+        <input type="button" value="Show All Countries Statistics" id="countriesStatistics"><br/><br/>
+        <input type="text" placeholder="Enter Country" id="searchName"/>
+        <input type="button" value="Search" id="specificStatistics"/><br/><br/>
+    </form><br/>
+    <div id="statistics"></div><br/>
+    <table id="countriesPopulation"></table><br/>
+    <table id="regionsCountries"></table><br/>
+    <table id="currencyCountries"></table>
+</body>
+</html>

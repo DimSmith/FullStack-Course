@@ -1,0 +1,20 @@
+$spacing: 20px;
+$padding: 15px;
+$collapse: collapse;
+$fontColor: #501717;
+$fontSize: bold;
+
+table{
+    border-spacing: $spacing ;
+    border-collapse:$collapse ;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    padding: $padding;
+    color: $fontColor;
+    font-weight: $fontSize;
+}
+.size{
+    width: 50%;
+}

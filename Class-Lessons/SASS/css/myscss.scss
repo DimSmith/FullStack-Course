@@ -1,0 +1,27 @@
+/*Background*/
+@import "elements/background";
+/*Button*/
+@import "elements/button";
+/*div*/
+@import "elements/div";
+
+body{
+    font-family: $myfont;
+    color: $myColor;
+    font-size: $myfontSize;
+    background-color: $myBackGround;
+}
+#container{
+    width: $myWidth;
+}
+div{
+    background-color: $divBackground;
+    color: $divTextColor;
+    border: $divBorder;
+}
+input[type="button"]{
+    background-color: $buttonBackground;
+    color: $buttonText;
+    margin-top: $buttonTopMargin;
+    font-family: $buttonFontSize;
+}

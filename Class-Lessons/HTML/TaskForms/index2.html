@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskForm</title>
+    <style>
+        *{text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>New Task</h1>
+    <form>
+        <input type="text" name="name" placeholder="Task Name" required><br/><br/>
+        <input type="radio" name="import" value="low" checked>Low
+        <input type="radio" name="import" value="mild">Mild
+        <input type="radio" name="import" value="high">High
+        <input type="radio" name="import" value="immediately">Immediately<br/><br/>
+        <input type="date"><br/><br/> 
+        <textarea name="comments" placeholder="Task description..." rows="4" cols="50"></textarea><br/><br/>
+        <hr/>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset"> 
+    </form>
+</body>
+</html>
